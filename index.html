@@ -29,7 +29,7 @@
     }
     main {
       padding: 2rem 1rem;
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
     }
     h2.section-title {
@@ -56,30 +56,31 @@
     }
     .tool-content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .tool-main {
+      flex: 1 1 300px;
+      text-align: center;
     }
     .tool img {
       max-width: 120px;
       height: 60px;
       object-fit: contain;
       margin-bottom: 1rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
     .tool a {
       text-decoration: none;
       color: #1f2937;
       font-weight: 600;
-      display: block;
-      text-align: center;
     }
     .caption {
       font-size: 0.9rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       color: #555;
-      text-align: center;
     }
     .cta {
       display: block;
@@ -87,10 +88,8 @@
       font-size: 0.9rem;
       color: #2563eb;
       font-weight: 600;
-      text-align: center;
     }
     .quote-bubble {
-      margin-top: 1rem;
       background-color: #f1f5f9;
       padding: 1rem;
       border-radius: 0.75rem;
@@ -98,6 +97,8 @@
       font-style: italic;
       color: #374151;
       position: relative;
+      max-width: 300px;
+      flex: 1 1 300px;
     }
     .quote-bubble::before {
       content: '“';
@@ -129,12 +130,14 @@
     <div class="tools">
       <div class="tool">
         <div class="tool-content">
-          <a href="https://www.printful.com" target="_blank">
-            <img src="./assets/printful-logo.png" alt="Printful Logo">
-            <div>Printful</div>
-            <p class="caption">Launch your own merch store without inventory or upfront costs.</p>
-            <span class="cta">Get started free →</span>
-          </a>
+          <div class="tool-main">
+            <a href="https://www.printful.com" target="_blank">
+              <img src="./assets/printful-logo.png" alt="Printful Logo">
+              <div>Printful</div>
+              <p class="caption">Launch your own merch store without inventory or upfront costs.</p>
+              <span class="cta">Get started free →</span>
+            </a>
+          </div>
           <div class="quote-bubble">
             <a href="https://www.printful.com/blog/how-to-sell-t-shirts-on-amazon" target="_blank">How to Sell T-Shirts on Amazon: From $0 to $1,000 a Month</a>
           </div>
@@ -142,12 +145,14 @@
       </div>
       <div class="tool">
         <div class="tool-content">
-          <a href="https://www.canva.com" target="_blank">
-            <img src="./assets/canva-logo.png" alt="Canva Logo">
-            <div>Canva</div>
-            <p class="caption">Design social posts, product mockups, and more — fast and easy.</p>
-            <span class="cta">Start designing →</span>
-          </a>
+          <div class="tool-main">
+            <a href="https://www.canva.com" target="_blank">
+              <img src="./assets/canva-logo.png" alt="Canva Logo">
+              <div>Canva</div>
+              <p class="caption">Design social posts, product mockups, and more — fast and easy.</p>
+              <span class="cta">Start designing →</span>
+            </a>
+          </div>
           <div class="quote-bubble">
             <a href="https://www.canva.com/case-studies/" target="_blank">135 million people across the globe build their brand with Canva</a>
           </div>
@@ -155,12 +160,14 @@
       </div>
       <div class="tool">
         <div class="tool-content">
-          <a href="https://www.notion.so" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png" alt="Notion Logo">
-            <div>Notion</div>
-            <p class="caption">Plan, track, and build your entire business in one place.</p>
-            <span class="cta">Explore templates →</span>
-          </a>
+          <div class="tool-main">
+            <a href="https://www.notion.so" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png" alt="Notion Logo">
+              <div>Notion</div>
+              <p class="caption">Plan, track, and build your entire business in one place.</p>
+              <span class="cta">Explore templates →</span>
+            </a>
+          </div>
           <div class="quote-bubble">
             <a href="https://www.notion.com/templates/side-hustle-os?srsltid=AfmBOorYK61ubt7d1mfX82ozeKIkXerA2ZdcCXtmUm9VQb_Oa4Sj9zAt" target="_blank">A starter kit to help you manage your side hustle to-do's in one place</a>
           </div>
@@ -168,12 +175,14 @@
       </div>
       <div class="tool">
         <div class="tool-content">
-          <a href="https://www.shopify.com" target="_blank">
-            <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify Logo">
-            <div>Shopify</div>
-            <p class="caption">Everything you need to start and scale an online store.</p>
-            <span class="cta">Try Shopify free →</span>
-          </a>
+          <div class="tool-main">
+            <a href="https://www.shopify.com" target="_blank">
+              <img src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png" alt="Shopify Logo">
+              <div>Shopify</div>
+              <p class="caption">Everything you need to start and scale an online store.</p>
+              <span class="cta">Try Shopify free →</span>
+            </a>
+          </div>
           <div class="quote-bubble">
             <a href="https://www.shopify.com/blog/phone-case-design-ideas" target="_blank">23 Phone Case Design Ideas to Inspire Your New Business</a>
           </div>
@@ -181,12 +190,14 @@
       </div>
       <div class="tool">
         <div class="tool-content">
-          <a href="https://www.convertkit.com" target="_blank">
-            <img src="./assets/convertkit-logo.svg" alt="ConvertKit Logo">
-            <div>ConvertKit</div>
-            <p class="caption">Grow your audience with landing pages and email automations.</p>
-            <span class="cta">Start building your list →</span>
-          </a>
+          <div class="tool-main">
+            <a href="https://www.convertkit.com" target="_blank">
+              <img src="./assets/convertkit-logo.svg" alt="ConvertKit Logo">
+              <div>ConvertKit</div>
+              <p class="caption">Grow your audience with landing pages and email automations.</p>
+              <span class="cta">Start building your list →</span>
+            </a>
+          </div>
           <div class="quote-bubble">
             <a href="https://kit.com/testimonials" target="_blank">"Kit is my first and last subscription app. Can't run my business without it."</a>
           </div>
