@@ -42,10 +42,24 @@
 .tool-main a:hover {
   color: #2563eb;
 }
+
+.tool-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.tool-main {
+  flex: 1 1 300px;
+}
+.quote-bubble {
+  flex: 1 1 300px;
+}
 </style>
 </head>
 <body>
-<header>
+<header style="background-color: #1f2937; color: white; padding: 2rem 1rem; text-align: center;">
 <h1>SideGigMe</h1>
 <p>Kickstart your next side hustle with the best tools in the game</p>
 </header>
@@ -98,29 +112,7 @@
 </div>
 </div>
 
-<div class="tool" style="background-color: white; border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-<div class="tool-content">
-<div class="tool-main" style="flex: 1 1 100%; text-align: center;">
-<h2 class="section-title">Real-world examples selling now:</h2>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-<a href="https://shop.genzbruh.com/products/goat-unisex-hoodie" target="_blank">
-<img alt="GOAT Hoodie" src="./assets/Hoodie-Goat.png" style="max-width: 200px;"/>
-</a>
-<a href="https://shop.genzbruh.com/products/mew-dad-hat" target="_blank">
-<img alt="MEW Hat" src="./assets/Hat-Mew.png" style="max-width: 200px;"/>
-</a>
-<a href="https://shop.genzbruh.com/products/sus-unisex-classic-tee" target="_blank">
-<img alt="SUS Tee" src="./assets/Tee-Sus.png" style="max-width: 200px;"/>
-</a>
-<a href="https://shop.genzbruh.com/products/bruh-unisex-hoodie" target="_blank">
-<img alt="BRUH Hoodie" src="./assets/Hoodies-Bruh.png" style="max-width: 200px;"/>
-</a>
 </div>
-</div>
-</div>
-</div>
-</div>
-
 <div class="comparison">
 <h3>Why These 3?</h3>
 <ul>
@@ -130,6 +122,24 @@
 </ul>
 </div>
 </main>
+<div class="product-sidebar" style="position: absolute; top: 250px; right: 5%; width: 250px;">
+<div style="background-color: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;">
+<h2 style="font-size: 1.25rem; margin-bottom: 1rem;">Real-world examples selling now:</h2>
+<a href="https://shop.genzbruh.com/products/goat-unisex-hoodie" target="_blank">
+<img alt="GOAT Hoodie" src="./assets/Hoodie-Goat.png" style="max-width: 100%; margin-bottom: 1rem;"/>
+</a>
+<a href="https://shop.genzbruh.com/products/mew-dad-hat" target="_blank">
+<img alt="MEW Hat" src="./assets/Hat-Mew.png" style="max-width: 100%; margin-bottom: 1rem;"/>
+</a>
+<a href="https://shop.genzbruh.com/products/sus-unisex-classic-tee" target="_blank">
+<img alt="SUS Tee" src="./assets/Tee-Sus.png" style="max-width: 100%; margin-bottom: 1rem;"/>
+</a>
+<a href="https://shop.genzbruh.com/products/bruh-unisex-hoodie" target="_blank">
+<img alt="BRUH Hoodie" src="./assets/Hoodies-Bruh.png" style="max-width: 100%;"/>
+</a>
+</div>
+</div>
+
 <footer>
   © 2025 SideGigMe – Affiliate links may be used. We may earn a commission if you purchase via these links, <strong>at no additional cost to you</strong>.
 </footer>
